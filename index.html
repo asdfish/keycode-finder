@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<p style = "font-family: monospace" id = "p">press a key on your keyboard</p>
+		<script>
+			var p = document.getElementById("p")
+			document.addEventListener("keydown", function(event) {
+				event.preventDefault();
+				p.innerHTML = "key: " + event.key + "<br>location: " + event.location + "<br>which: " + event.which + "<br>code: " + event.code;
+			});
+		</script>
+	</body>
+</html>
